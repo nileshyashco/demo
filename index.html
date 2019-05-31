@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Labs - Recipe Labs</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel='stylesheet' type='text/css'>
+ 
+</head>
+<body>  
+  <div class="network">
+   <div class="networkinner">
+    <span id="loginbox">
+    </span>
+    <ul>
+      <li><a href="javascript:void(0)"><img src="images/header_0_0.png" alt="Home"/></a></li>
+      <li><a href="javascript:void(0)"><img src="images/header_0_1.png" alt="App Overview"/></a></li>
+      <li><a href="javascript:void(0)"><img src="images/header_0_2.png" alt="Contact"/></a></li>
+      <li><a href="javascript:void(0)"><img src="images/header_0_3.png" alt="Home"/></a></li>
+      <li><a href="/" id="nsl"><img src="images/header_0_4.png" alt="Search"/> <span class="down"></span></a>  
+       <div id="navsearch">
+        	<ul>
+          <li><a href="javascript:void(0)">By Ingredient</a></li>
+          <li><a href="javascript:void(0)">Vegetarian</a></li>
+          <li><a href="javascript:void(0)">Vegan</a></li>
+          <li><a href="javascript:void(0)">Gluten Free</a></li>
+        </ul></div>
+      </li>
+      <li><a href="javascript:void(0)"><img src="images/header_0_5.png" alt="Privacy Policy"/></a> </li>
+      <li><a href="javascript:void(0)"><img src="images/header_0_6.png" alt="About"/></a></li>
+    </ul>
+     
+    
+   </div>
+  </div>
+  <!-- search panel -->
+  <div class="featured">
+    <div class="featuredinner">
+      <ul>
+      <li><img src="images/rp.png" alt="Recipe Puppy" class="img-responsive recipePuppy"> 
+      <span> <div class="search">
+<input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+ <button type="submit" class="btn btn-primary btn-sm greenSearch">Search</button>
+</div></span> </li> 
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+  <!-- middle content panel -->
+  <section class="middleBodyPanel">
+  <div class="container">
+  <div class="row">
+  <div class="table-responsive dataTable">
+   <table class="table table-bordered">
+                <thead>
+                    <tr class="danger">
+                        <th>
+                            Item
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            Cost
+                        </th>
+                        <th>
+                            Interest
+                        </th>
+                        <th>
+                            Subtotal
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active">
+                        <td>
+                           Widget
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            10.00
+                        </td>
+                         <td>
+                            10%
+                        </td>
+                        <td>
+                            11.00
+                        </td>
+                    </tr>
+                    
+                    <tr class="success">
+                        <td>
+                           Widget
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            10.00
+                        </td>
+                         <td>
+                            10%
+                        </td>
+                        <td>
+                            11.00
+                        </td>
+                    </tr>
+                    
+                     <tr class="active">
+                        <td>
+                           Widget
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            10.00
+                        </td>
+                         <td>
+                            10%
+                        </td>
+                        <td>
+                            11.00
+                        </td>
+                    </tr>
+                    
+                     <tr class="active">
+                        <td>
+                           Widget
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            10.00
+                        </td>
+                         <td>
+                            10%
+                        </td>
+                        <td>
+                            11.00
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+  </div>
+  </div>
+  </div>
+  </section>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="footermidcont">©2019 RecipeLabs - <span>TOS / Privacy Policy - bookmarklet</span></div>
+</div>
+</div>
+
+</footer>  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="http://recipelabs.s3.amazonaws.com/layout/jquery-ui-1.8.16.custom.min.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function() {
+       t = '';
+       t2 = '';
+       $('#ntl').hover(
+         function(){ clearTimeout(t2);if($('#navtools').is(':hidden')){ $('#navtools').show("scale", {percent: 100,origin: ['top','left']},100); } }, 
+         function(){ clearTimeout(t2);t2 = setTimeout("$('#navtools').hide('scale', {percent: 0,origin: ['top','left']},100);",200); }
+       );
+       $('#nsl').hover(
+         function(){ clearTimeout(t);if($('#navsearch').is(':hidden')){ $('#navsearch').show("scale", {percent: 100,origin: ['top','left']},100); } }, 
+         function(){ clearTimeout(t);t = setTimeout("$('#navsearch').hide('scale', {percent: 0,origin: ['top','left']},100);",200); }
+       );
+       $('#navtools').hover(
+         function(){ clearTimeout(t2);if($('#navtools').is(':hidden')){$('#navtools').show("scale", {percent: 100,origin: ['top','left']},100);} }, 
+         function(){ clearTimeout(t2);t2 = setTimeout("$('#navtools').hide('scale', {percent: 0,origin: ['top','left']},100);",200); }
+       );
+       $('#navsearch').hover(
+         function(){ clearTimeout(t);if($('#navsearch').is(':hidden')){ $('#navsearch').show("scale", {percent: 100,origin: ['top','left']},100); } }, 
+         function(){ clearTimeout(t);t = setTimeout("$('#navsearch').hide('scale', {percent: 0,origin: ['top','left']},100);",200); }
+       );
+       //$('#loginbox').html('<iframe style="height:24px;max-width:988px; width:100%;overflow:hidden;border-style:none;margin-right:5px;margin-top:5px;font-size:10px;font-family:\'Ubuntu\',Sans-serif;" frameborder="0" border="0" cellspacing="0" src="http://recipes.recipelabs.com/ajax/rl_login/?next='+encodeURI(window.location)+'"></iframe>');
+      });
+    </script>
+</body>
+</html>
+
